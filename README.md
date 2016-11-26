@@ -1,5 +1,6 @@
 # AndroidTrackCalculatorv3
 YU Prep Class Calculator
+Yaşar University calculates the state to pass a prep class students 
 
 The app link
 
