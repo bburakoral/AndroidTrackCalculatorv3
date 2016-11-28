@@ -36,15 +36,60 @@ public class MainActivity extends AppCompatActivity {
         btn_Calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String number1 = String.valueOf(quiz1.getText());   double n1 = Double.parseDouble(number1);
-                String number2 = String.valueOf(quiz2.getText());   double n2 = Double.parseDouble(number2);
-                String number3 = String.valueOf(midterm.getText()); double n3 = Double.parseDouble(number3);
-                String number4 = String.valueOf(quiz3.getText());   double n4 = Double.parseDouble(number4);
-                String number5 = String.valueOf(quiz4.getText());   double n5 = Double.parseDouble(number5);
-                String number6 = String.valueOf(finaln.getText());  double n6 = Double.parseDouble(number6);
-                String number7 = String.valueOf(wp.getText());      double n7 = Double.parseDouble(number7);
-                String number8 = String.valueOf(is.getText());      double n8 = Double.parseDouble(number8);
-                String number9 = String.valueOf(absense.getText()); int    n9 = Integer.parseInt(number9);
+                
+                String number1 = String.valueOf(quiz1.getText());   
+                if(number1==NULL){
+                    number1="0";
+                }
+                double n1 = Double.parseDouble(number1);
+                
+                String number2 = String.valueOf(quiz2.getText());   
+                if(number2==NULL){
+                    number2="0";
+                }
+                double n2 = Double.parseDouble(number2);
+                
+                String number3 = String.valueOf(midterm.getText());
+                if(number3==NULL){
+                    number3="0";
+                }double n3 = Double.parseDouble(number3);
+                
+                String number4 = String.valueOf(quiz3.getText());
+                if(number4==NULL){
+                    number4="0";
+                }
+                double n4 = Double.parseDouble(number4);
+                
+                String number5 = String.valueOf(quiz4.getText());
+                if(number5==NULL){
+                    number5="0";
+                }
+                double n5 = Double.parseDouble(number5);
+                
+                String number6 = String.valueOf(finaln.getText());
+                if(number6==NULL){
+                    number6="0";
+                }
+                double n6 = Double.parseDouble(number6);
+                
+                String number7 = String.valueOf(wp.getText());
+                if(number7==NULL){
+                    number7="0";
+                }
+                double n7 = Double.parseDouble(number7);
+                
+                String number8 = String.valueOf(is.getText());
+                if(number8==NULL){
+                    number8="0";
+                }
+                double n8 = Double.parseDouble(number8);
+                
+                String number9 = String.valueOf(absense.getText());
+                if(number9==NULL){
+                    number9="0";
+                }
+                int n9 = Integer.parseInt(number9);
+                
 
                 double ortalama = (((n1 * 5/100) + (n2 * 5/100) + (n3 * 25/100) + (n4 * 5/100) + (n5 * 5/100) + (n6 * 40/100) + (n7 *10/100) + (n8 * 5/100)));
                 String result = String.valueOf(ortalama);
